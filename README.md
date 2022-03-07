@@ -1,38 +1,34 @@
-## Welcome to GitHub Pages
+# Welcome to the innovatie-helm-charts Github page
 
-You can use the [editor on GitHub](https://github.com/YurrytVermeire/innovatie-helm-charts/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+This project is in collaboration with VIVES University of applied sciences. It collects data from TABS motion sensors and uses a python-program to write the data to an influx database and retrieve it again in use of the API. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The purpose of this page is to be a specific URL to the github repository so that it can be used in artifacthub. 
+Artifacthub ensures that our product can be easily deployed in kubernetes clusters using the `helm install` command
 
-### Markdown
+**Our artifacthub-page can be found here:**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/YurrytVermeire/innovatie-helm-charts/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/innovatie-helm-charts)](https://artifacthub.io/packages/search?repo=innovatie-helm-charts)
+
+## Contents
+
+### Chart.yaml
+
+This is the explanation yaml-file for the project. this contains the name, version and description of the code.
+
+### values.yaml
+
+This file contains everything needed for the deployment and setup only, in the kubernetes cluster. If the hostport or image needs to be changes, this is where it would be done.
+
+### ./templates
+
+Templates contain the files for the actual depoyment of the service.
+
+1. Configmap.yaml: All enviroment variables that aren't confidential are stored here for use in the cluster.
+2. Secret.yaml: All environment variables that ***are*** confidential are loaded into and contained within this file.
+3. Deployment.yaml: This specifies the container in which our app is used. Do not change this file.
+4. Service.yaml: Configures the service based on the deployment.
+5. The remainder of the files aren't that important to the correct working of the service.
+
+## Support or Contact
+
+Due to this being a private project, there is no possibility to have any support for the project nor have any contact with the creators of this project.
