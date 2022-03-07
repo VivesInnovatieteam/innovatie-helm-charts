@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: index.docker.io/yurrytvermeire/innovatie21:latest
+  repository: index.docker.io/vivesinnovatie/innovatie21:latest
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
