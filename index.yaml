@@ -52,7 +52,7 @@ entries:
     created: "2022-03-07T11:56:03.615660816+01:00"
     description: Helm-charts voor het project van het innovatieteam
     digest: 0f1f49c851e0a87033fcff50ad05f62bb5747757574ff07e8237be5c6c1a9513
-    name: motionSensors
+    name: motion-sensors
     urls:
     - https://github.com/VivesInnovatieteam/innovatie-helm-charts/releases/download/motion-sensors-1.0.2/motion-sensors-1.0.2.tgz
     version: 1.0.2
