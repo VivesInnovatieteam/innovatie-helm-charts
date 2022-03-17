@@ -7,7 +7,7 @@ Artifacthub ensures that our product can be easily deployed in kubernetes cluste
 
 **Our artifacthub-page can be found here:**
 
-[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/innovatie-helm-charts)](https://artifacthub.io/packages/search?repo=innovatie-helm-charts)
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/motion-sensors)](https://artifacthub.io/packages/search?repo=motion-sensors)
 
 ## Contents
 
