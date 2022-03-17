@@ -91,3 +91,6 @@ mqtt_pass: mqtt_pass
 mqtt_server: mqtt_server
 flask_env: flask_env
 flask_debug: flask_debug
+jwt_secret_key: jwt_secret_key
+jwt_user: jwt_user
+jwt_pass: jwt_pass
