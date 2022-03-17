@@ -60,17 +60,17 @@ spec:
             key: mqtt_port
       - name: JWT_SECRET_KEY
         valueFrom:
-          configMapKeyRef:
+          secretKeyRef:
             name: flask-pod-configmap
             key: jwt_secret_key
       - name: JWT_USER
         valueFrom:
-          configMapKeyRef:
+          secretKeyRef:
             name: flask-pod-configmap
             key: jwt_user
       - name: JWT_PASS
         valueFrom:
-          configMapKeyRef:
+          secretKeyRef:
             name: flask-pod-configmap
             key: jwt_pass
       
